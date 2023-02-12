@@ -1,134 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900">
-    <title>Document</title>
-    <style>
+<!DOCTYPE HTML >
+< html  lang =" ko " >
+< 머리 >
+    < 메타  문자 집합 =" UTF-8 " >
+    < 메타  이름 =" 뷰포트 " 내용 =" 너비=장치 너비, 초기 크기=1.0 " >
+    < link  rel =" stylesheet " href =" https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900 " >
+    < 제목 > 문서 </ 제목 >
+    < 스타일 >
 
-body{
-    background-color: white;
+본문 {
+    배경색 : 흰색;
 }
   
-#timer {
-  color: #eeeeee;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-size: .7em;
-  letter-spacing: 5px;
+# 타이머 {
+  색상 :  # eeeeee ;
+  텍스트 정렬 : 가운데;
+  텍스트 변환 : 대문자;
+  font-family :  'Lato' , 산세리프;
+  글꼴 크기 :  .7 em ;
+  글자 간격 :  5px ;
 }
 
-.days, .hours, .minutes, .seconds {
-  display: inline-block;
-  padding: 20px;
-  width: 100px;
-  border-radius: 5px;
+. 일 , . 시간 , . 분 , . 초 {
+  디스플레이 : 인라인 블록;
+  패딩 :  20px ; _
+  너비 :  100 픽셀 ;
+  테두리 반경 :  5px ;
 }
 
-.days {
-  background: #EF2F3C;
+. 일 {
+  배경 :  # EF2F3C ;
 }
 
-.hours {
-  background: #eeeeee;
-  color: #183059;
+. 시간 {
+  배경 :  # eeeeee ;
+  색상 :  # 183059 ;
 }
 
-.minutes {
-  background: #276FBF;
+. 분 {
+  배경 :  # 276FBF ;
 }
 
-.seconds {
-  background: #F0A202;
+. 초 {
+  배경 :  # F0A202 ;
 }
 
-.numbers {
-  font-family: 'Montserrat', sans-serif;
-  color:  #183059;
-  font-size: 4em;
-  text-align: center;
+. 숫자 {
+  font-family :  'Montserrat' , 산세리프;
+  색상 :   # 183059 ;
+  글꼴 크기 :  4 em ;
+  텍스트 정렬 : 가운데;
 }
 
-.white {
-  position: absolute;
-  background:  #eeeeee;
-  height: 85px;
-  width: 75px;
-  left: 30%;
-  top: 2%;
+. 흰색 {
+  위치 : 절대;
+  배경 :   # eeeeee ;
+  높이 :  85 픽셀 ;
+  너비 :  75 픽셀 ;
+  왼쪽 :  30 % ;
+  상단 :  2 % ;
 }
 
-.red {
-  position: absolute;
-  background:  #EF2F3C;
-  left: 18%;
-  top: 9%;
-  height: 65px;
-  width: 70px;
+. 빨강 {
+  위치 : 절대;
+  배경 :   # EF2F3C ;
+  왼쪽 :  18 % ;
+  최고 :  9 % ;
+  높이 :  65 픽셀 ;
+  너비 :  70 픽셀 ;
  
 }
 
-.blue {
-  position: absolute;
-  background:  #276FBF;
-  height: 80px;
-  width: 80px;
-  left: 60%;
-  top: 5%;
+. 파란색 {
+  위치 : 절대;
+  배경 :   # 276FBF ;
+  높이 :  80 픽셀 ;
+  너비 :  80 픽셀 ;
+  왼쪽 :  60 % ;
+  최고 :  5 % ;
 
 
 }
 
 
-    </style>
-</head>
-<body>
+    </ 스타일 >
+</ 헤드 >
+< 본문 >
     
-<div id="timer">
+< 사업부  ID =" 타이머 " >
 
-    <div class="days"> 
-        <div id="days" class="numbers "> </div>days</div> 
-      <div class="hours"> 
-        <div  id="hours" class="numbers"> </div>hours</div> 
-      <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div>minutes</div> 
-      <div   class="seconds"> 
-        <div id="seconds" class="numbers"> </div>seconds</div> 
-      </div>
+    < 사업부  클래스 =" 일수 " > 
+        < div  id =" 일 " 클래스 =" 숫자 " >  </ div > 일 </ div > 
+      < 사업부  클래스 =" 시간 " > 
+        < div   id =" 시간 " 클래스 =" 숫자 " >  </ div > 시간 </ div > 
+      < div  클래스 =" 분 " > 
+        < div   id =" 분 " 클래스 =" 숫자 " >  </ div > 분 </ div > 
+      < 사업부    클래스 =" 초 " > 
+        < div  id =" 초 " 클래스 =" 숫자 " >  </ div > 초 </ div > 
+      </ 디비전 >
 
-</div>
+</ 디비전 >
 
-</body>
-<script>
-    const year = new Date().getFullYear();
-const myDate = new Date('Oct 15, 2024 00:00:00');
-console.log(myDate);
+</ 본문 >
+< 스크립트 >
+    const  연도  =  새  날짜 ( ) . getFullYear ( ) ;
+const  myDate  =  새  날짜 ( '2023년 06월 28일 00:00:00' ) ;
+콘솔 . 로그 ( myDate ) ;
 
-// countdown
-let timer = setInterval(function() {
+// 카운트다운
+let  timer  =  setInterval ( function ( )  {
 
-  // get today's date
-  const today = new Date().getTime();
+  // 오늘 날짜 구하기
+  const  오늘  =  새  날짜 ( ) . getTime ( ) ;
 
-  // get the difference
-  const diff = myDate - today;
+  // 차이 구하기
+  const  diff  =  myDate  -  오늘 ;
 
-  // math
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  // 수학
+  let  days  =  수학 . 바닥 ( 차이  /  ( 1000  *  60  *  60  *  24 ) ) ;
+  let  시간  =  수학 . 바닥 ( ( 차이  %  ( 1000  *  60  *  60  *  24 ) )  /  ( 1000  *  60  *  60 ) ) ;
+  분  = 수학 . _  바닥 ( ( 차이 % ( 1000 * 60 * 60 ) ) / ( 1000 * 60 ) ) ;           
+  let  초  =  수학 . 바닥 ( ( 차이  %  ( 1000  *  60 ) )  /  1000 ) ;
 
-  // display
-  document.getElementById("days").innerHTML=days
-  document.getElementById("hours").innerHTML=hours
-  document.getElementById("minutes").innerHTML=minutes
-  document.getElementById("seconds").innerHTML=seconds
+  // 표시하다
+  문서 . getElementById ( "일" ) . innerHTML = 일
+  문서 . getElementById ( "시간" ) . innerHTML = 시간
+  문서 . getElementById ( "분" ) . innerHTML = 분
+  문서 . getElementById ( "초" ) . innerHTML = 초
 
 
 
-}, 1);
-</script>
-</html>
+} ,  1 ) ;
+</ 스크립트 >
+</ HTML >
